@@ -1,0 +1,13 @@
+.about {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  margin-top: 20vh;
+  margin-left: 3vw;
+
+  @media (min-width: 800px) {
+    margin-left: 18rem;
+  }
+  @media (min-width: 1250px) {
+    margin-left: 15rem;
+  }
+}
