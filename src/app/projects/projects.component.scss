@@ -7,11 +7,15 @@ $neutral-100: hsl(24, 22%, 91%);
 $color-accent: hsl(35, 100%, 58%);
 
 .project-cards {
-  margin-top: 3rem;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 350px);
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 1.2rem;
+  margin-left: 3vw;
+
+  @media (min-width: 1250px) {
+    margin-left: 0;
+  }
 }
 .card {
   background-color: #f5f5f5;
@@ -19,12 +23,19 @@ $color-accent: hsl(35, 100%, 58%);
   border-radius: 0.5rem;
   justify-items: center;
   text-align: center;
+  font-size: 1rem;
+  position: relative;
+
   &-name {
     color: $color-primary-600;
     font: {
       size: 1.5rem;
       weight: 400;
     }
+  }
+  img {
+    height: 300px;
+    object-fit: cover;
   }
   &-tags {
     justify-items: center;
@@ -38,11 +49,18 @@ $color-accent: hsl(35, 100%, 58%);
   }
   &-description {
     text-align: justify;
+    color: $color-primary-800;
     max-width: 60ch;
     padding: 0.5rem;
+    margin-inline: auto;
+    margin-bottom: 1.5rem;
   }
   &-links {
     color: $color-primary-600;
+    position: absolute;
+    inset-inline: 1rem;
+    margin: 0;
+    bottom: 0.5rem;
   }
 }
 

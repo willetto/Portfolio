@@ -1,18 +1,21 @@
 <div class="project-cards">
-  <div class="card">
-    <img src="./assets/imgs/chart-screenshot.png" alt="screenshot" />
-    <h2 class="card-name">Tip Calculator</h2>
+  <div *ngFor="let project of projects; let i = index" class="card">
+    <a [href]="project.liveLink" target="_blank"
+      ><img [src]="project.imgUrl" alt="screenshot"
+    /></a>
+    <h2 class="card-name">{{ project.title }}</h2>
     <ul class="card-tags">
-      <li>Vanilla JS</li>
-      <li>CSS Grid</li>
+      <li *ngFor="let tag of project.tags">{{ tag }}</li>
     </ul>
     <p class="card-description">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore excepturi
-      labore reiciendis, odit, laboriosam eveniet et in aliquam dignissimos?
+      {{ project.description }}
     </p>
     <div class="card-links">
-      <a href="" target="_blank">Live Site</a><span class="light"> | </span
-      ><a href="" target="_blank">Github Repo</a>
+      <a [href]="project.liveLink" target="_blank">Live Site</a>
+      <span *ngIf="project.repoLink">
+        <span class="light"> | </span
+        ><a [href]="project.repoLink" target="_blank">Github Repo</a>
+      </span>
     </div>
   </div>
 </div>

@@ -1,8 +1,6 @@
-<div class="skills">
-  <div class="titles">
-    <h2 class="skill">Languages:</h2>
-  </div>
-  <div class="tags">
-    <p>HTML5, CSS, JavaScript ES6, Spanish</p>
-  </div>
-</div>
+<dl class="skills">
+  <ng-container *ngFor="let skill of skills">
+    <dt class="title">{{ skill.title }}:</dt>
+    <dd class="tags">{{ skill.skill }}</dd>
+  </ng-container>
+</dl>
