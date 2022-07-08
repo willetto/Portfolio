@@ -10,10 +10,16 @@ export class ProjectsComponent implements OnInit {
     {
       title: 'Rocky Montaño Portfolio',
       imgUrl: './assets/imgs/rocky-screenshot.png',
-      tags: ['Site Design', 'Vanilla JS', 'API Integration', 'Image optimized'],
+      tags: [
+        'UNDER CONSTRUCTION',
+        'Site Design',
+        'Vanilla JS',
+        'API Integration',
+        'Image optimized',
+      ],
       description:
         "A custom designed photography portfolio. I'm proudest of the gallery that integrates the clients most recent IG posts. Also, check out the gradient buttons that match the brand colors.",
-      liveLink: 'https://www.rockymontano.com',
+      liveLink: 'https://rocky-montano-draft.netlify.app/',
     },
     {
       title: 'Forkify: Recipe App',

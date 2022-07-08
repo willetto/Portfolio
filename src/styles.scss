@@ -4,7 +4,8 @@ $color-primary-400: #489fb5;
 $color-primary-600: #16697a;
 $color-primary-800: #0c3942;
 
-$neutral-100: hsl(24, 22%, 91%);
+$neutral-100: hsl(24, 28%, 91%);
+$neutral-200: hsl(35, 35%, 80%);
 $color-accent: hsl(35, 100%, 58%);
 
 $ff-display: "Roboto Slab", serif;
@@ -45,7 +46,9 @@ a {
 }
 
 body {
-  background-color: $neutral-100;
+  // background-color: $neutral-100;
+  min-height: 100vh;
+  background: linear-gradient(150deg, $neutral-100, $neutral-200);
   font: {
     family: $ff-body;
     weight: 400;
@@ -59,7 +62,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  margin-top: 3vh;
+  padding-top: 3vh;
   margin-left: 3vw;
   margin-bottom: 15vh;
   @media (min-width: 1250px) {
@@ -102,4 +105,18 @@ main {
   padding-right: 5vw;
   width: 100%;
   position: relative;
+}
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
