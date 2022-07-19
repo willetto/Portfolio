@@ -49,10 +49,10 @@ body {
   // background-color: $neutral-100;
   min-height: 100vh;
   background-image: url("./assets/imgs/nnnoise.svg"),
-    url(./assets/imgs/uuundulate.svg),
+    // url(./assets/imgs/uuundulate.svg),
     linear-gradient(150deg, $neutral-100, $neutral-200);
-  background-size: auto, cover, auto;
-  background-position: center, top, center;
+  background-size: auto, 2000px, auto;
+  background-position: center, top left, center;
   font: {
     family: $ff-body;
     weight: 400;
