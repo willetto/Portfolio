@@ -12,6 +12,12 @@ export class ResumeComponent implements OnInit {
   ngOnInit(): void {}
   jobs = [
     {
+      company: 'Array',
+      title: 'Web Developer',
+      location: 'Denver',
+      description: ' ',
+    },
+    {
       company: 'Digital Engagement with Youth',
       title: 'Consultant',
       location: 'Denver',
