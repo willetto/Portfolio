@@ -9,11 +9,11 @@ export class SkillsComponent implements OnInit {
   skills = [
     {
       title: 'Languages',
-      skill: 'html, css, JavaScript ES6, English,Spanish',
+      skill: 'JavaScript ES6, HTML, CSS, English, Spanish',
     },
     {
       title: 'Frameworks',
-      skill: 'Angular, Sass, Open-Props, Bootstrap, Bulma',
+      skill: 'Svelte, Angular, Sass, Open-Props, Bootstrap',
     },
     {
       title: 'Design',
