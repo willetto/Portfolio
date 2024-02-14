@@ -34,7 +34,9 @@ $neutral-100: hsl(24, 22%, 91%);
     }
   }
   img {
-    height: 300px;
+    // height: 300px;
+    width: 100%;
+    aspect-ratio: 4/3;
     object-fit: cover;
   }
   &-tags {
@@ -48,7 +50,7 @@ $neutral-100: hsl(24, 22%, 91%);
     }
   }
   &-description {
-    text-align: justify;
+    text-align: left;
     color: $color-primary-800;
     max-width: 60ch;
     padding: 0.5rem;
@@ -66,6 +68,6 @@ $neutral-100: hsl(24, 22%, 91%);
 
 img {
   width: 100%;
-  object-fit: scale-down;
+  // object-fit: scale-down;
   border-radius: 0.3rem;
 }

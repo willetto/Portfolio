@@ -48,6 +48,7 @@ a {
 body {
   // background-color: $neutral-100;
   min-height: 100vh;
+  overflow-x: hidden;
   background-image: 
   // url(./assets/imgs/uuundulate.svg),
     // url("./assets/imgs/nnnoise.svg"),
@@ -67,7 +68,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  padding-top: 3vh;
+  padding-top: 5vh;
   margin-left: 3vw;
   margin-bottom: 15vh;
   @media (min-width: 1250px) {

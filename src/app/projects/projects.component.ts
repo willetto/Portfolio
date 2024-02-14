@@ -8,6 +8,22 @@ import { Component, OnInit } from '@angular/core';
 export class ProjectsComponent implements OnInit {
   projects = [
     {
+      title: 'Dr. Few Skincare',
+      imgUrl: './assets/imgs/dr-few-screenshot.png',
+      tags: ['Shopify', 'Custom API Integration'],
+      description:
+        'A custom Shopify theme that includes Shopify API usage. Design by GRIP, development by myself as part of Rebar.',
+      liveLink: 'https://www.drfewskincare.com/',
+    },
+    {
+      title: 'InFolk',
+      imgUrl: './assets/imgs/infolk-screenshot.png',
+      tags: ['SvelteKit', 'Storyblok', 'Sass'],
+      description:
+        'InFolk is a SvelteKit brochure site that uses Storyblok as a headless CMS. Design by Rule29, development by myself as part of Rebar.',
+      liveLink: 'https://www.infolk.co/',
+    },
+    {
       title: 'Rocky Montaño Portfolio',
       imgUrl: './assets/imgs/rocky-screenshot.png',
       tags: [
@@ -29,15 +45,6 @@ export class ProjectsComponent implements OnInit {
         'My capstone project from a Udemy JS course. Design by Jonas Schmedtmann, functionality by myself.',
       liveLink: 'https://forkify-willetto.netlify.app/',
       repoLink: 'https://github.com/willetto/Forkify',
-    },
-    {
-      title: 'Typing Game',
-      imgUrl: './assets/imgs/typing-screenshot.png',
-      tags: ['Angular', 'Open Props'],
-      description:
-        'Project from Angular Udemy course. This project used Faker.js to generate the Lorem string.I replaced that with a (much) smaller NPM package to deploy.',
-      liveLink: 'https://willetto-typing.netlify.app/',
-      repoLink: 'https://github.com/willetto/typing-game',
     },
     {
       title: 'Expense Chart Component',
